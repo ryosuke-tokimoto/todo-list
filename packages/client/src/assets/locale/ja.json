@@ -1,0 +1,15 @@
+{
+  "NAVIGATION": {
+    "HOME": "ホーム",
+    "TODO_LIST": "TODOリスト"
+  },
+  "TODO_LIST": {
+    "TABLE": {
+      "HEADER": {
+        "ID": "ID",
+        "TITLE": "概要",
+        "STATUS": "ステータス"
+      }
+    }
+  }
+}

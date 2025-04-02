@@ -1,0 +1,18 @@
+{
+  "extends": "@monorepo/typescript-config",
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "module": "Node16",
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "moduleResolution": "node16",
+    "strictPropertyInitialization": false,
+    "paths": {
+      "@adapters*": ["src/libs/adapters*"],
+      "@configs*": ["src/libs/configs*"],
+      "@interfaces*": ["src/interfaces*"],
+      "@libs*": ["src/libs*"],
+      "@modules*": ["src/modules*"]
+    }
+  }
+}

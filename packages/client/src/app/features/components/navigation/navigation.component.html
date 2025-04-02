@@ -1,0 +1,11 @@
+<nav class="fixed left-0 right-0 top-0 z-50 h-16 border-b border-gray-200 bg-white">
+  <div class="mx-auto flex h-full max-w-7xl items-center justify-between px-4">
+    <div class="flex items-center gap-4">
+      @for (menu of menuData; track menu.label) {
+        <a [routerLink]="[menu.url]" class="rounded-md px-4 py-2 text-gray-700 transition-colors hover:bg-gray-100">
+          {{ menu.label | translate }}
+        </a>
+      }
+    </div>
+  </div>
+</nav>
