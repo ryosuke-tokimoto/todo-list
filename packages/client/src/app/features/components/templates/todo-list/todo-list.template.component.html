@@ -1,0 +1,19 @@
+<div class="mx-auto grid max-w-[1200px] grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6 p-6">
+  @for (todo of todoList(); track todo.id) {
+    <article
+      class="cursor-pointer rounded-lg bg-white p-6 shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg"
+    >
+      <div>
+        <h2 class="mb-4 text-xl font-bold leading-relaxed text-gray-800">{{ todo.title }}</h2>
+        <div class="flex flex-col gap-2">
+          <time class="text-sm text-gray-500">{{ todo.createdAt | date: 'yyyy/MM/dd' }}</time>
+          <div class="flex flex-wrap gap-2">
+            <span class="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-600 transition-colors hover:bg-gray-200"
+              >{{ todo.status }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </article>
+  }
+</div>

@@ -1,0 +1,10 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "dist", "src/**/*.spec.ts"],
+  "compilerOptions": {
+    "removeComments": true,
+    "sourceMap": false
+  },
+  "files": ["src/main.ts"]
+}
